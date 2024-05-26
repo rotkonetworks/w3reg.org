@@ -1,18 +1,97 @@
 {
-  "name": "example-with-unocss",
+  "name": "w3reg",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
+    "ssg": "node generate-static.js",
     "start": "vinxi start"
   },
   "dependencies": {
     "@solidjs/router": "^0.13.3",
     "@solidjs/start": "^1.0.0",
     "@unocss/reset": "^0.59.2",
+    "polkadot-api": "workspace:*",
+    "rxjs": "^7.8.1",
     "solid-js": "^1.8.17",
+    "solid-ssr": "^1.7.2",
     "unocss": "^0.59.2",
     "vinxi": "^0.3.11"
+  },
+  "polkadot-api": {
+    "kusama": {
+      "chain": "kusama",
+      "metadata": "metadata/kusama.scale"
+    },
+    "polkadot": {
+      "chain": "polkadot",
+      "metadata": "metadata/polkadot.scale"
+    },
+    "paseo": {
+      "chain": "paseo",
+      "metadata": "metadata/paseo.scale"
+    },
+    "westend": {
+      "chain": "westend",
+      "metadata": "metadata/westend.scale"
+    },
+    "asset-hub-kusama": {
+      "chain": "asset-hub-kusama",
+      "metadata": "metadata/statemine.scale"
+    },
+    "asset-hub-paseo": {
+      "chain": "asset-hub-paseo",
+      "metadata": "metadata/asset-hub-paseo.scale"
+    },
+    "asset-hub-polkadot": {
+      "chain": "asset-hub-polkadot",
+      "metadata": "metadata/statemint.scale"
+    },
+    "asset-hub-westend": {
+      "chain": "asset-hub-westend",
+      "metadata": "metadata/westmint.scale"
+    },
+    "bridge-hub-kusama": {
+      "chain": "bridge-hub-kusama",
+      "metadata": "metadata/bridgehub-kusama.scale"
+    },
+    "bridge-hub-polkadot": {
+      "chain": "bridge-hub-polkadot",
+      "metadata": "metadata/bridgehub-polkadot.scale"
+    },
+    "bridge-hub-westend": {
+      "chain": "bridge-hub-westend",
+      "metadata": "metadata/bridgehub-westend.scale"
+    },
+    "collectives-polkadot": {
+      "chain": "collectives-polkadot",
+      "metadata": "metadata/collectives-polkadot.scale"
+    },
+    "collectives-westend": {
+      "chain": "collectives-westend",
+      "metadata": "metadata/collectives-westend.scale"
+    },
+    "coretime-kusama": {
+      "chain": "coretime-kusama",
+      "metadata": "metadata/coretime-kusama.scale"
+    },
+    "coretime-westend": {
+      "chain": "coretime-westend",
+      "metadata": "metadata/coretime-westend.scale"
+    },
+    "encointer-kusama": {
+      "chain": "encointer-kusama",
+      "metadata": "metadata/encointer-kusama.scale"
+    },
+    "people-kusama": {
+      "chain": "people-kusama",
+      "metadata": "metadata/people-kusama.scale"
+    },
+    "people-westend": {
+      "chain": "people-westend",
+      "metadata": "metadata/people-westend.scale"
+    }
   },
   "engines": {
     "node": ">=18"
